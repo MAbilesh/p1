@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My JS Test</title>
+  <link rel="stylesheet" href="met.css">
+</head>
+<body>
+  <p>cart qunatity</p>
+  <button onclick="
+    console.log(`cart quantity: ${cartQuantity}`);
+    ">Show quantity
+  </button>
+
+  <button onclick="
+    cartQuantity = cartQuantity + 2;
+    console.log(`cart quantity: ${cartQuantity}`);
+    ">Add to cart
+  </button>
+
+  <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset')
+    console.log(`cart quantity: ${cartQuantity}`);
+    ">Reset
+  </button>
+  
+  <script src="prac.js"></script>
+  <script>
+    function f1(){
+      console.log('hello');
+      console.log('pet');
+    }
+    f1();
+  </script>
+</body>
+</html>

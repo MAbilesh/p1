@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array-Loops</title>
+</head>
+<body>
+  
+  <script>
+    const a = [10,20,30,40,50,60,70,80,90,100];
+
+    console.log(a);
+    console.log(a[0]);
+    
+    console.log(typeof [1,2]);
+
+    console.log(Array.isArray([1,2,3,4]));
+
+    a.splice(2, 2);
+    console.log(a);
+
+    a.push(120);
+    a.pop()
+    console.log(a);
+
+    console.log(a.length);
+
+    const array1 = [1, 2, 3];
+    const array2 = array1.slice();
+    array2.push(4);
+    console.log(array1);
+    console.log(array2);
+
+    const [firstValue, secondValue] = [1, 2, 3, 4, 5];
+
+    for(let i = 0; i <= 10; i++) {
+      if(i % 3 === 0){
+        continue;
+      }
+      console.log(i);
+      if(i === 8) {
+        break;
+      }
+    }
+    console.log("Loop ended");
+    let i = 1;
+    while(i <= 10) {
+      if(i % 3 ===0){
+        i++;
+        continue;
+      }
+      console.log(i);
+      i++;
+    }
+    console.log("While loop ended");
+
+    function doubleArray(nums) {
+      const numdoubled = [];
+
+      for(let i = 0; i < nums.length; i++){
+        const num = nums[i];
+        if(num === 0){
+          return numdoubled;
+        }
+        numdoubled.push(num * 2);
+      }
+      return numdoubled;
+    }
+
+    console.log(doubleArray([1, 1, 3]));
+    console.log(doubleArray([1, 2, 3, 4, 5]));
+
+  </script>
+</body>
+</html>

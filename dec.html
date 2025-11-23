@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" onkeydown="console.log('Key pressed!')">
+
+  <input type="text" onkeydown="console.log(event.key)">
+
+  <input type="text" id="myInput">
+
+
+  <script>
+    // JavaScript code can go here
+    const function1 = function greeting() {
+      console.log("Hello, World!");
+    }
+
+    console.log(function1); // Outputs the function definition
+    document.getElementById("myInput").addEventListener("keydown", function(event) {
+      console.log("You pressed: " + event.key);
+      
+      if (event.key === "Enter") {
+        alert("Enter key was pressed!" + ` text: ${event.target.value}`);
+      }
+    });
+
+  </script>
+</body>
+</html>

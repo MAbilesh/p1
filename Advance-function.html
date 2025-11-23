@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Functions</title>
+</head>
+<body>
+
+  <button onclick="" class="js-button">Click</button>
+  
+  <script>
+    /*
+    const buttonElement = document.querySelector('.js-button');
+
+    const eventListener = () => {
+      console.log("Button clicked!");
+    };
+
+    buttonElement.addEventListener('keydown', eventListener);
+
+    //buttonElement.removeEventListener('click', eventListener);
+
+    buttonElement.addEventListener('click', () => {
+      console.log("Button clicked2!");
+    });
+    */
+
+    /*
+    function greeting() {
+      console.log("Hello!");
+    }
+
+    greeting();
+
+    const num = 2;
+
+    const function1 = function greeting() {
+      console.log("Hello, World!");
+    }
+
+    console.log(function1); // Outputs the function definition
+    console.log(typeof function1); // Outputs "function"
+    
+    function1(); // Calls the function, outputs "Hello, World!"
+
+    const object = {
+      num: 2,
+      fun: function () {
+        console.log("Hello from function inside object!");
+       }
+    };
+    object.fun();
+
+    function display(param){
+      console.log(param);
+    }
+
+    display(2);
+
+    function run(param){
+      param();
+    }
+
+    run(function(){
+      console.log("hello4");
+    });
+    
+   setTimeout(function(){
+    console.log('timeout');
+    console.log('timeout2');
+   }, 3000);
+
+   console.log('next line');
+
+   setInterval(function(){
+    console.log('interval');
+   }, 3000);
+
+   console.log("next line 2");
+    */
+    /*
+    [
+      'make dinner',
+      'do laundry',
+      'clean room'
+    ].forEach((task, index) => {
+      console.log(index);
+      console.log(task);
+    });
+
+
+    const arrowFunction =() =>{
+      console.log("Hello!");
+    };
+
+    arrowFunction();
+
+    const oneParam = param =>{
+      console.log(param + 1);
+    }
+
+    oneParam(2);
+
+    const oneLine = ()=> 3+ 2;
+    console.log(oneLine());
+
+    const object2 = {
+      method: () => {
+        console.log("Hello from method inside object!");
+      }
+    }; */
+
+    console.log([1, -3, 5].filter((value, index) => {
+     /* if(value >= 0){
+        return true;
+      } else {
+        return false;
+      }*/
+      return value >= 0;
+    }));
+
+    console.log([1, 1, 3].map((value, index) => {
+      return value * 2;
+    }));
+
+    console.log([1, 1, 3].map(value => { value * 2;}));
+
+  </script>
+</body>
+</html>

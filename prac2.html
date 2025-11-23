@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="fir_bu">My world</button>
+  <button class="sec_but">My world2</button>
+
+  <script>
+    console.log('Hello world');
+    console.log(document.querySelector('.fir_bu').innerHTML);
+    document.querySelector('.fir_bu').innerHTML = 'Game of Thrones';
+
+    console.log(document.querySelector('.sec_but'));
+
+    const buttonElement = document.querySelector('.sec_but');
+    console.log(buttonElement);
+    console.log(document.body);
+
+    document.body.innerHTML = '<button>Good Job!</button>';
+    document.title = 'My new title';
+  </script>
+</body>
+</html>
